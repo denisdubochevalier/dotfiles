@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/denis/wallpaper/stairs.jpg"
+let background = "#030303"
+let foreground = "#a0a0a0"
+let cursor     = "#a0a0a0"
+
+" Colors
+let color0  = "#030303"
+let color1  = "#4c4c4c"
+let color2  = "#5c5c5c"
+let color3  = "#7c7c7c"
+let color4  = "#949494"
+let color5  = "#a8a8a8"
+let color6  = "#bcbcbc"
+let color7  = "#a0a0a0"
+let color8  = "#414141"
+let color9  = "#4c4c4c"
+let color10 = "#5c5c5c"
+let color11 = "#7c7c7c"
+let color12 = "#949494"
+let color13 = "#a8a8a8"
+let color14 = "#bcbcbc"
+let color15 = "#a0a0a0"

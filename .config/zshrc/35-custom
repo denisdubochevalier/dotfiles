@@ -1,0 +1,5 @@
+# Functions
+me () {
+    cd ~/Clone/github.com/denisdubochevalier/"$1"
+}
+

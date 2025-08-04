@@ -1,0 +1,184 @@
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: "Fira Sans", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+window#waybar {
+  background-color: #030303;
+  border-bottom: 1px solid #030303;
+  color: #a0a0a0;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+/* window#waybar.termite { */
+/*   background-color: #3f3f3f; */
+/* } */
+/**/
+/* window#waybar.chromium { */
+/*   background-color: #000000; */
+/*   border: none; */
+/* } */
+
+button {
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent;
+  /* Avoid rounded borders under each button name */
+  border: none;
+  border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+  background: inherit;
+  box-shadow: inset 0 -3px #a0a0a0;
+}
+
+/* you can set a style on hover for any module like this */
+#pulseaudio:hover {
+  background-color: #bcbcbc;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  background-color: #a0a0a0;
+  color: #030303;
+}
+
+#workspaces button:hover {
+  background: #bcbcbc;
+}
+
+#workspaces button.focused {
+  background-color: #a8a8a8;
+  box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.active {
+  background-color: #4c4c4c;
+  color: #a0a0a0;
+}
+
+#workspaces button.urgent {
+  background-color: #bcbcbc;
+}
+
+#submap {
+  background-color: #a0a0a0;
+  color: #030303;
+  box-shadow: inset 0 -3px #a0a0a0;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#language,
+#keyboard-state,
+#mpd {
+  padding: 0 10px;
+  margin: 0;
+  color: #030303;
+  background-color: #a0a0a0;
+}
+
+#window,
+#workspaces {
+  margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+@keyframes blink {
+  to {
+    background-color: #a0a0a0;
+    color: #030303;
+  }
+}
+
+#power-profiles-daemon {
+  padding-right: 15px;
+}
+
+#pulseaudio.muted {
+  background-color: #bcbcbc;
+}
+
+#temperature.critical {
+  background-color: #bcbcbc;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #bcbcbc;
+}
+
+#idle_inhibitor.activated {
+  background-color: #bcbcbc;
+}
+
+#language {
+  padding: 0 5px;
+  margin: 0;
+  min-width: 16px;
+}
+
+#keyboard-state {
+  padding: 0 0px;
+  margin: 0;
+  min-width: 16px;
+}
+
+#keyboard-state > label {
+  padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+  background: #bcbcbc;
+}
+
+#tray:hover,
+#clock:hover,
+#idle_inhibitor:hover,
+#power-profiles-daemon:hover,
+#network:hover {
+  background-color: #bcbcbc;
+}

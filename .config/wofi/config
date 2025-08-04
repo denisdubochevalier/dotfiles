@@ -1,0 +1,16 @@
+color=~/.cache/wal/colors
+width=100%
+height=24
+allow_images=true
+allow_markup=true
+matching=fuzzy
+insensitive=true
+sort_order=alphabetical
+orientation=horizontal
+location=2
+hide_scroll=true
+image_size=16
+layer=overlay
+y=-24
+
+display_generic=true

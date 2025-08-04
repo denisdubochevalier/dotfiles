@@ -1,0 +1,21 @@
+set $wallpaper /home/denis/wallpaper/stairs.jpg
+
+set $background #030303
+set $foreground #a0a0a0
+
+set $color0 #030303
+set $color1 #4c4c4c
+set $color2 #5c5c5c
+set $color3 #7c7c7c
+set $color4 #949494
+set $color5 #a8a8a8
+set $color6 #bcbcbc
+set $color7 #a0a0a0
+set $color8 #414141
+set $color9 #4c4c4c
+set $color10 #5c5c5c
+set $color11 #7c7c7c
+set $color12 #949494
+set $color13 #a8a8a8
+set $color14 #bcbcbc
+set $color15 #a0a0a0

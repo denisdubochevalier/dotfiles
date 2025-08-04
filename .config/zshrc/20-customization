@@ -1,0 +1,45 @@
+# -----------------------------------------------------
+# CUSTOMIZATION
+# -----------------------------------------------------
+POSH=agnoster
+
+# -----------------------------------------------------
+# Set-up FZF key bindings (CTRL R for fuzzy history finder)
+# -----------------------------------------------------
+source <(fzf --zsh)
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+alias fzf='fzf --preview "bat --color=always {}"'
+
+# Use fd (https://github.com/sharkdp/fd) for listing path candidates.
+# - The first argument to the function ($1) is the base path to start traversal
+# - See the source code (completion.{bash,zsh}) for the details.
+_fzf_compgen_path() {
+    fd --hidden --exclude .git . "$1"
+}
+
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+    fd --type=d --hidden --exclude .git . "$1"
+}
+
+eval "$(ssh-agent -s)" 2>&1 > /dev/null
+
+# Vi mode
+set -o vi
+
+# zsh history
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
+# -----------------------------------------------------
+# Prompt
+# -----------------------------------------------------
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
+#eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/EDM115-newline.omp.json)"
+
+# Shipped Theme
+# eval "$(oh-my-posh init zsh --config /usr/share/oh-my-posh/themes/agnoster.omp.json)"

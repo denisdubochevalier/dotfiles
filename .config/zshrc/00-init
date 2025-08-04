@@ -1,0 +1,13 @@
+# -----------------------------------------------------
+# INIT
+# -----------------------------------------------------
+clear
+
+# -----------------------------------------------------
+# Exports
+# -----------------------------------------------------
+export EDITOR=nvim
+export PAGER=nvimpager
+export ZSH="$HOME/.config/zshrc/"
+export PATH=~/.local/bin:~/go/bin:~/.cargo/bin:$PATH
+export QT_QPA_PLATFORMTHEME=qt6ct

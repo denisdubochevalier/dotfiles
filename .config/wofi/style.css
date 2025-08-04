@@ -1,0 +1,58 @@
+window {
+  font-family: "Fira Sans";
+  font-size: 14px;
+  margin: 0;
+  border: #a0a0a0;
+  background-color: #030303;
+}
+
+#input {
+  margin: 0 5px;
+  border: none;
+  border-radius: 0;
+  color: #bcbcbc;
+  background-color: #4c4c4c;
+}
+
+#inner-box {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+#outer-box {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+#scroll {
+  margin: 0px;
+  border: none;
+}
+
+#text {
+  margin: 0 5px;
+  border: none;
+  color: #a0a0a0;
+}
+
+#entry {
+  border: none;
+}
+
+#entry:focus {
+  border: none;
+}
+
+#entry:selected {
+  background-color: #5c5c5c;
+  border-radius: 0;
+  border: none;
+}
+
+#img {
+  margin-right: 18px;
+}

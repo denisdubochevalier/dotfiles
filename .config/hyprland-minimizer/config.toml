@@ -1,0 +1,6 @@
+launcher = "wofi --show dmenu"
+stack_base_directory = "/tmp"
+workspace = "special:minimized"
+restore_to = "active"
+poll_interval_ms = 2000
+auto_unminimize_on_focus = false
