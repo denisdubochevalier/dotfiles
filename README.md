@@ -2,6 +2,8 @@
 
 My dotfiles
 
+![screenshot](screenshot.png)
+
 To install:
 
 ```sh
