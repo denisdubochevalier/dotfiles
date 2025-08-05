@@ -6,10 +6,16 @@
   // "width": 1280, // Waybar width
   "spacing": 5, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": ["hyprland/workspaces", "hyprland/submap"],
-  "modules-center": ["hyprland/window"],
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/submap"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ],
   "modules-right": [
     // "mpd",
+    "custom/updates",
     "idle_inhibitor",
     "power-profiles-daemon",
     "temperature",
@@ -26,11 +32,27 @@
     "clock",
   ],
   // Modules configuration
+  "custom/updates": {
+    "format": "{} {icon}",
+    "return-type": "json",
+    "format-icons": {
+      "has-updates": "󱍷",
+      "updated": "󰂪",
+    },
+    "exec-if": "which waybar-module-pacman-updates",
+    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300",
+  },
   "hyprland/workspaces": {
     "all-outputs": true,
     "active-only": false,
     "persistent-workspaces": {
-      "*": [1, 2, 3, 4, 5],
+      "*": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
     },
     "format": "{name}: {icon}",
     "format-icons": {
@@ -114,7 +136,11 @@
     "critical-threshold": 75,
     // "format-critical": "{temperatureC}°C {icon}",
     "format": "{temperatureC}°C {icon}",
-    "format-icons": ["", "", ""],
+    "format-icons": [
+      "",
+      "",
+      ""
+    ],
   },
   // "backlight": {
   // "device": "acpi_video1",
@@ -190,7 +216,11 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", ""],
+      "default": [
+        "",
+        "",
+        ""
+      ],
     },
     "on-click": "pavucontrol",
   },
