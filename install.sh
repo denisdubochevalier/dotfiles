@@ -4,7 +4,7 @@ for file in ./.*; do
   ln -s $(pwd)/${file} ${HOME}/
 done
 
-mkdir -pv ${HOME}/{.cache,.config,.icons,.themes,wallpaper}
+mkdir -pv ${HOME}/{.cache,.config,.icons,.themes,wallpaper,.local/bin}
 
 for dir in ./.cache/*; do
   ln -s $(pwd)/${dir} ${HOME}/.cache/
@@ -24,4 +24,8 @@ done
 
 for dir in ./wallpaper/*; do
   ln -s $(pwd)/${dir} ${HOME}/wallpaper/
+done
+
+for file in ./.local/bin/*; do
+  ln -s $(pwd)/${file} ${HOME}/.local/bin/
 done
