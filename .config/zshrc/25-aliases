@@ -30,4 +30,3 @@ alias meteo="curl wttr.in/Orleans+France"
 alias act='act -s GITHUB_TOKEN="$(gh auth token)"'
 alias b='btm'
 alias g='glances'
-alias code='flatpak run com.vscodium.codium'
